@@ -1,0 +1,63 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS3lsZSIsImlhdCI6MTY4Mjg1MDA0MiwiZXhwIjoxNjgyODUwMDU3fQ.6ZS4QPWVSnl18XMYZns3silUDannceXgSzmEF5kw7IM
+
+###
+
+DELETE http://localhost:4000/logout
+content-type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNTY4NzU5OTIyfQ.RT6wszuCeFLwC_6ksmNMIELxiC5s-uRivfRxyZof5ag"
+}
+
+###
+
+POST http://localhost:4000/nrtoken
+content-type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS3lsZSIsImlhdCI6MTY4NDY0Njc4Nn0.IA9ea8NXRWikDHjXzph8uh0Kuu2-_fMci_OWZfPlnzA"
+}
+
+###
+
+POST http://localhost:4000/login
+content-type: application/json
+
+{
+  "username": "Kyle",
+  "password": "kyle123pass"
+}
+
+###
+
+POST http://103.120.178.195/Sang.Ray.Mob.Api/Ray/PostHSE
+content-type: application/x-www-form-urlencoded
+
+{
+  "iTransId": 0,
+  "DocDate": "2023-02-04",
+  "Project": 306,
+  "ProjectDes": "123",
+  "Location": "Ggg",
+  "UserId": 3,
+  "Signature": "sign121617042162023.jpg",
+  "Body": [
+    {
+      "Observation": "Hg",
+      "RiskLevel": 2,
+      "ActionReq": "Tc",
+      "ActionBy": 37,
+      "TargetDate": "2023-02-04",
+      "Images": "121336042132023.jpg;121516042152023.jpg;121522042152023.jpg;121530042152023.jpg"
+    },
+    {
+      "Observation": "Gvc",
+      "RiskLevel": 2,
+      "ActionReq": "Cg",
+      "ActionBy": 17,
+      "TargetDate": "2023-02-04",
+      "Images": "121400042142023.jpg;121406042142023.jpg;121413042142023.jpg"
+    }
+  ]
+}
